@@ -1,0 +1,187 @@
+html {
+    background-color: rgb(255, 252, 240);;
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: rgb(71, 88, 121);
+}
+
+.container {
+    width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {padding: 0 10px;}
+
+    /* body {font-size: 1.4rem;} */
+}
+
+@media screen and (min-width: 1260px) {
+
+	.container {max-width: 1260px;}
+
+	/* body {font-size: 1.6rem;} */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#search {
+    font-size: 1.25rem;
+    height: 3rem;
+    width: 10rem;
+    margin: 1.25rem;
+    border-radius: 75px;
+    border: 2px rgb(93, 117, 165) solid;
+    background-color: rgb(93, 117, 165);
+    color: rgb(255, 252, 240);
+    cursor: pointer;
+}
+
+#search:hover {
+    color: rgb(93, 117, 165);
+    background-color: rgb(255, 252, 240);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+input {
+    font-size: 1.25rem;
+    height: 3rem;
+    width: 70%;
+    margin: 1.25rem;
+    padding-left: 1rem;
+    border: none;
+    border-bottom: 1px rgb(71, 88, 121) solid;
+    background-color: transparent;
+    color: rgb(71, 88, 121);
+}
+
+input:focus {
+    outline: none;
+}
+
+.collection {
+    font-size: 1.25rem;
+    /* height: 3rem;
+    width: 10rem;
+    */
+    margin: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(71, 88, 121);
+   
+}
+.collection:hover {
+    text-decoration: underline;
+}
+
+.collection:visited {
+    text-decoration: none;
+    color: rgb(71, 88, 121);
+}
+
+#artist {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(71, 88, 121);
+    /* width: 70%; */
+    padding: 0;
+    margin-top: 4.5rem;
+}
+
+.name {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    color: rgb(255, 252, 240);
+    font-size: 2.5rem;
+}
+
+.img {
+    object-fit: cover;
+   height: 16rem;
+}
+
+.title {
+    
+    margin-top: 4rem;
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #artist {
+        flex-direction: row;
+    }
+}
+
+.event {
+    margin-bottom: 5rem;
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(89, 114, 163, 0.2);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.event-date-box {
+    
+}
+
+.event-date {
+   margin: 0;
+}
+
+.event-date-year {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+.event-location-box {
+    text-align: center;
+}
+
+.event-location {
+    margin: 0;
+}
+
+.event-location-detail {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+#icon {
+    font-size: 2rem;
+    color: rgb(89, 114, 163);
+    cursor: pointer;
+}
+
+/* @media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1260px) {
+
+
+} */
