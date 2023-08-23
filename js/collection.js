@@ -5,7 +5,7 @@ var list = localStorage.getItem("eventCollection") ? JSON.parse(localStorage.get
 
 function renderList() {
     listResult.innerHTML = `<div class="event">
-        <h1 class="title">Events List</h1>
+        <h1 class="title list">Events List</h1>
         ${list.map(event => { 
             return `<div class="event-item">
             <div class="event-date-box">
@@ -31,10 +31,8 @@ function pressLike(button) {
     if (index !== -1) {
         list?.splice(index, 1)
     }
-        // isLike = false
     localStorage.setItem("eventCollection", JSON.stringify(list));
     renderList()
-    // isLike = !isLike
     
 }
 
